@@ -1,27 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ebac Tech Talks</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ebac Tech Talks</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="./styles/main.scss">
-</head>
-<body>
-  <section class="hero">
-    <div class="container">
-      <img src="images/ebac_logo.svg" alt="EBAC" class="hero__soon">
-      <h1 class="hero__text">
-        O maior evento de tecnologia do Brasil começa em
-        30d 17h 20min 56s
-      </h1>
-    </div>
-  </section>
-  <script src="./scripts/main.js"></script>
-</body>
+    <link rel="stylesheet" href="./styles/main.scss" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <div class="container">
+        <img src="images/ebac_logo.svg" alt="EBAC" class="hero__soon" />
+        <h1 class="hero__text">
+          O maior evento de tecnologia do Brasil começa em
+          <span id="counter"></span>
+        </h1>
+        <div class="infos-bar">
+          <ul class="infos-bar__infos">
+            <li class="infos-bar__item">
+              <b>Localização</b>
+              Allianz Parque - Barra Funda - São Paulo/SP
+            </li>
+            <li class="infos-bar__item">
+              <b>Preço</b>
+              A partir de R$ 129,00
+            </li>
+            <li class="infos-bar__item">
+              <b>Quando</b>
+              xx/xx/xxxx
+            </li>
+          </ul>
+
+          <a href="#" class="buttom buttom--primary"> Garanta sua vaga </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="event event--front-end">
+      <div class="container" data-aos="fade-right">
+        <div class="event__details">
+          <h2 class="event__detail__title">Front-End</h2>
+          <p class="event__detail__description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+            nam? Sint excepturi rem dolores, est pariatur id, maxime labore
+            obcaecati quibusdam rerum magnam ad suscipit magni repellendus
+            voluptates distinctio asperiores! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Animi, impedit temporibus nostrum
+            voluptatum ipsam est molestias cumque inventore odit ipsa cum,
+            obcaecati quisquam tempora, sit dignissimos nam omnis consequuntur
+            aperiam.
+          </p>
+        </div>
+        <img src="./images/frontend.png" alt="" class="event__image" />
+      </div>
+    </section>
+
+    <section class="event event--ui-ux event__image__left">
+      <div class="container" data-aos="fade-left">
+        <div class="event__details">
+          <h2 class="event__detail__title">Ui-Ux</h2>
+          <p class="event__detail__description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+            nam? Sint excepturi rem dolores, est pariatur id, maxime labore
+            obcaecati quibusdam rerum magnam ad suscipit magni repellendus
+            voluptates distinctio asperiores! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Animi, impedit temporibus nostrum
+            voluptatum ipsam est molestias cumque inventore odit ipsa cum,
+            obcaecati quisquam tempora, sit dignissimos nam omnis consequuntur
+            aperiam.
+          </p>
+        </div>
+        <img src="./images/ui-ux.png" alt="" class="event__image" />
+      </div>
+    </section>
+
+    <section class="event event--data-science">
+      <div class="container" data-aos="fade-right">
+        <div class="event__details">
+          <h2 class="event__detail__title">Data Science</h2>
+          <p class="event__detail__description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+            nam? Sint excepturi rem dolores, est pariatur id, maxime labore
+            obcaecati quibusdam rerum magnam ad suscipit magni repellendus
+            voluptates distinctio asperiores! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Animi, impedit temporibus nostrum
+            voluptatum ipsam est molestias cumque inventore odit ipsa cum,
+            obcaecati quisquam tempora, sit dignissimos nam omnis consequuntur
+            aperiam.
+          </p>
+        </div>
+        <img src="./images/data.png" alt="" class="event__image" />
+      </div>
+    </section>
+
+    <section class="event event--backend event__image__left">
+      <div class="container" data-aos="fade-left">
+        <div class="event__details">
+          <h2 class="event__detail__title">Back-end</h2>
+          <p class="event__detail__description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+            nam? Sint excepturi rem dolores, est pariatur id, maxime labore
+            obcaecati quibusdam rerum magnam ad suscipit magni repellendus
+            voluptates distinctio asperiores! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Animi, impedit temporibus nostrum
+            voluptatum ipsam est molestias cumque inventore odit ipsa cum,
+            obcaecati quisquam tempora, sit dignissimos nam omnis consequuntur
+            aperiam.
+          </p>
+        </div>
+        <img src="./images/backend.png" alt="" class="event__image" />
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
 </html>
